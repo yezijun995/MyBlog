@@ -1,0 +1,111 @@
+2020-07-09 23:41:04.132  INFO 8296 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 8296 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-09 23:41:04.141  INFO 8296 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-09 23:41:13.388  WARN 8296 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2020-07-09 23:41:13.417 ERROR 8296 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-07-09 23:42:05.641  INFO 5860 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 5860 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-09 23:42:05.654  INFO 5860 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-09 23:42:10.009  WARN 5860 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2020-07-09 23:42:10.047 ERROR 5860 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-07-09 23:42:53.066  INFO 6912 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 6912 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-09 23:42:53.070  INFO 6912 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-09 23:42:57.222  WARN 6912 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2020-07-09 23:42:57.247 ERROR 6912 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-07-09 23:43:39.480  INFO 13568 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 13568 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-09 23:43:39.494  INFO 13568 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-09 23:43:43.559  INFO 13568 --- [restartedMain] edu.fdzc.BlogApplication                 : Started BlogApplication in 4.856 seconds (JVM running for 6.373)
+2020-07-09 23:43:49.318  INFO 13568 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.index', args=[{}, 1, {}]}
+2020-07-09 23:43:51.166  INFO 13568 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Result:{}index
+2020-07-09 23:44:04.388  INFO 13568 --- [http-nio-80-exec-8] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.index', args=[{}, 1, {}]}
+2020-07-09 23:44:04.650  INFO 13568 --- [http-nio-80-exec-8] edu.fdzc.aspect.LogAspect                : Result:{}index
+2020-07-09 23:44:15.140  INFO 13568 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/blog/97', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.blog', args=[97, {}]}
+2020-07-09 23:44:15.434  INFO 13568 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Result:{}blog
+2020-07-09 23:44:16.545  INFO 13568 --- [http-nio-80-exec-2] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/comments/97', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.CommentController.comments', args=[97, {}]}
+2020-07-09 23:44:16.690  INFO 13568 --- [http-nio-80-exec-2] edu.fdzc.aspect.LogAspect                : Result:{}blog :: commentList
+2020-07-09 23:44:42.015  INFO 13568 --- [http-nio-80-exec-7] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/blog/97', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.blog', args=[97, {}]}
+2020-07-09 23:44:42.225  INFO 13568 --- [http-nio-80-exec-7] edu.fdzc.aspect.LogAspect                : Result:{}blog
+2020-07-09 23:44:43.157  INFO 13568 --- [http-nio-80-exec-6] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/comments/97', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.CommentController.comments', args=[97, {}]}
+2020-07-09 23:44:43.312  INFO 13568 --- [http-nio-80-exec-6] edu.fdzc.aspect.LogAspect                : Result:{}blog :: commentList
+2020-07-09 23:45:56.142  INFO 16088 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 16088 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-09 23:45:56.145  INFO 16088 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-09 23:46:00.119  INFO 16088 --- [restartedMain] edu.fdzc.BlogApplication                 : Started BlogApplication in 4.874 seconds (JVM running for 6.442)
+2020-07-09 23:46:00.216  INFO 16088 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/blog/97', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.blog', args=[97, {}]}
+2020-07-09 23:46:01.820  INFO 16088 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Result:{}blog
+2020-07-09 23:46:03.044  INFO 16088 --- [http-nio-80-exec-4] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/comments/97', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.CommentController.comments', args=[97, {}]}
+2020-07-09 23:46:03.214  INFO 16088 --- [http-nio-80-exec-4] edu.fdzc.aspect.LogAspect                : Result:{}blog :: commentList
+2020-07-09 23:50:12.854  INFO 2348 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 2348 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-09 23:50:12.859  INFO 2348 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-09 23:50:17.204  INFO 2348 --- [restartedMain] edu.fdzc.BlogApplication                 : Started BlogApplication in 5.18 seconds (JVM running for 6.832)
+2020-07-09 23:50:23.638  INFO 2348 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.index', args=[{}, 1, {}]}
+2020-07-09 23:50:25.414  INFO 2348 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Result:{}index
+2020-07-09 23:50:30.851  INFO 2348 --- [http-nio-80-exec-10] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.TypeShowController.types', args=[-1, 1, {}]}
+2020-07-09 23:50:31.249  INFO 2348 --- [http-nio-80-exec-10] edu.fdzc.aspect.LogAspect                : Result:{}types
+2020-07-09 23:50:34.273  INFO 2348 --- [http-nio-80-exec-10] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/archives', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.ArchiveShowController.archives', args=[{}]}
+2020-07-09 23:50:34.447  INFO 2348 --- [http-nio-80-exec-10] edu.fdzc.aspect.LogAspect                : Result:{}archives
+2020-07-09 23:50:35.599  INFO 2348 --- [http-nio-80-exec-6] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/message', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.MessageController.message', args=[{}]}
+2020-07-09 23:50:35.602  INFO 2348 --- [http-nio-80-exec-6] edu.fdzc.aspect.LogAspect                : Result:{}message_board
+2020-07-09 23:50:35.848  INFO 2348 --- [http-nio-80-exec-4] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/messagecomment', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.MessageController.messages', args=[{}]}
+2020-07-09 23:50:36.179  INFO 2348 --- [http-nio-80-exec-4] edu.fdzc.aspect.LogAspect                : Result:{}message_board::messageList
+2020-07-09 23:50:39.420  INFO 2348 --- [http-nio-80-exec-5] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/about', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.AboutShowController.about', args=[]}
+2020-07-09 23:50:39.424  INFO 2348 --- [http-nio-80-exec-5] edu.fdzc.aspect.LogAspect                : Result:{}about
+2020-07-09 23:50:46.715  INFO 2348 --- [http-nio-80-exec-5] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.TypeShowController.types', args=[-1, 1, {}]}
+2020-07-09 23:50:47.118  INFO 2348 --- [http-nio-80-exec-5] edu.fdzc.aspect.LogAspect                : Result:{}types
+2020-07-09 23:51:04.458  INFO 2348 --- [http-nio-80-exec-7] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.index', args=[{}, 1, {}]}
+2020-07-09 23:51:04.754  INFO 2348 --- [http-nio-80-exec-7] edu.fdzc.aspect.LogAspect                : Result:{}index
+2020-07-09 23:51:30.967  INFO 9096 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 9096 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-09 23:51:30.971  INFO 9096 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-09 23:51:34.969  INFO 9096 --- [restartedMain] edu.fdzc.BlogApplication                 : Started BlogApplication in 4.93 seconds (JVM running for 6.448)
+2020-07-09 23:51:48.048  INFO 9096 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.index', args=[{}, 1, {}]}
+2020-07-09 23:51:49.723  INFO 9096 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Result:{}index
+2020-07-09 23:51:54.035  INFO 9096 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.index', args=[{}, 1, {}]}
+2020-07-09 23:51:54.287  INFO 9096 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Result:{}index
+2020-07-09 23:51:54.292  INFO 9096 --- [http-nio-80-exec-8] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.TypeShowController.types', args=[-1, 1, {}]}
+2020-07-09 23:51:54.627  INFO 9096 --- [http-nio-80-exec-8] edu.fdzc.aspect.LogAspect                : Result:{}types
+2020-07-09 23:51:56.688  INFO 9096 --- [http-nio-80-exec-8] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/blog/96', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.blog', args=[96, {}]}
+2020-07-09 23:51:57.015  INFO 9096 --- [http-nio-80-exec-8] edu.fdzc.aspect.LogAspect                : Result:{}blog
+2020-07-09 23:51:58.157  INFO 9096 --- [http-nio-80-exec-7] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/comments/96', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.CommentController.comments', args=[96, {}]}
+2020-07-09 23:51:58.360  INFO 9096 --- [http-nio-80-exec-7] edu.fdzc.aspect.LogAspect                : Result:{}blog :: commentList
+2020-07-09 23:52:27.288  INFO 9096 --- [http-nio-80-exec-2] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/blog/96', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.blog', args=[96, {}]}
+2020-07-09 23:52:27.470  INFO 9096 --- [http-nio-80-exec-2] edu.fdzc.aspect.LogAspect                : Result:{}blog
+2020-07-09 23:52:28.292  INFO 9096 --- [http-nio-80-exec-5] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/comments/96', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.CommentController.comments', args=[96, {}]}
+2020-07-09 23:52:28.476  INFO 9096 --- [http-nio-80-exec-5] edu.fdzc.aspect.LogAspect                : Result:{}blog :: commentList
+2020-07-09 23:52:29.625  INFO 9096 --- [http-nio-80-exec-10] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.index', args=[{}, 1, {}]}
+2020-07-09 23:52:29.886  INFO 9096 --- [http-nio-80-exec-10] edu.fdzc.aspect.LogAspect                : Result:{}index

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="edu.fdzc.mapper.ICommentMapper">
+
+    <!--添加一条评论-->
+    <insert id="saveComment" parameterType="edu.fdzc.entity.Comment">
+        insert into t_comment (nickname,email,content,avatar,create_time,blog_id,parent_comment_id,admin_comment)
+        values (#{nickname},#{email},#{content},#{avatar},#{createTime},#{blogId},#{parentCommentId},#{adminComment});
+    </insert>
+
+    <!--删除一条评论-->
+    <delete id="deleteComment" >
+        delete from t_comment where id = #{id}
+    </delete>
+
+    <!--根据创建时间倒序来排-->
+    <select id="getCommentByParentId" resultType="edu.fdzc.entity.Comment">
+        select *
+        from t_comment c
+        where c.blog_id = #{blogId} and c.parent_comment_id = #{blogParentId}
+    </select>
+
+    <!--查询一级子评论-->
+    <select id="getCommentByChildId" resultType="edu.fdzc.entity.Comment">
+        select *
+        from t_comment c
+        where c.blog_id = #{blogId} and c.parent_comment_id = #{id}
+    </select>
+
+    <!--查询二级子评论-->
+    <select id="getCommentByBlogIdAndReplayId" resultType="edu.fdzc.entity.Comment">
+        select *
+        from t_comment c
+        where c.blog_id = #{blogId} and c.parent_comment_id = #{childId}
+    </select>
+
+</mapper>

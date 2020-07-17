@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="edu.fdzc.mapper.IMessageMapper">
+
+    <!--根据创建时间倒序查询父级留言-->
+    <select id="getMessageByParentId" resultType="edu.fdzc.entity.Message">
+        SELECT *
+        FROM t_message m
+        WHERE m.parent_message_id = #{ParentId}
+        ORDER BY m.create_time DESC
+    </select>
+
+    <select id="getMessageById" resultType="edu.fdzc.entity.Message">
+        select * from t_message where id=#{id}
+    </select>
+
+    <!--查询一级子集留言-->
+    <select id="getMessageByChildId" resultType="edu.fdzc.entity.Message">
+        SELECT *
+        FROM t_message m
+        WHERE m.parent_message_id = #{id}
+        ORDER BY m.create_time DESC
+    </select>
+
+    <!--查询二级及以上子集留言-->
+    <select id="getMessageByReplayId" resultType="edu.fdzc.entity.Message">
+        SELECT *
+        FROM t_message m
+        WHERE m.parent_message_id = #{childId}
+        ORDER BY m.create_time DESC
+    </select>
+
+    <!--新增留言-->
+    <insert id="addMessage" parameterType="edu.fdzc.entity.Message">
+        INSERT INTO t_message(nickname,email,content,avatar,create_time,parent_message_id,admin_message) VALUES
+        (#{nickname},#{email},#{content},#{avatar},#{createTime},#{parentMessageId},#{adminMessage});
+    </insert>
+
+    <!--删除留言-->
+    <delete id="deleteMessage" >
+        DELETE FROM t_message WHERE id = #{id};
+    </delete>
+
+</mapper>

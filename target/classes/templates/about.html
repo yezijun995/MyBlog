@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>关于我-Yifelix</title>
+    <link rel="shortcut icon" th:href="@{/images/adminavatar.jpg}" href="../static/images/adminavatar.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../static/css/animate.min.css" th:href="@{/css/animate.min.css}">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+    <!--导航-->
+    <nav th:replace="_fragments ::menu(5)"
+         class="ui inverted attached segment m-padded-tb-mini m-shadow-small gird-header">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu ">
+                <h2 class="ui olive header item">Yifelix</h2>
+                <a href="./index.html" class="m-item item m-mobile-hide"><i
+                        class="home icon"></i>首页</a>
+                <a href="./types.html" class="m-item item m-mobile-hide"><i
+                        class="idea icon"></i>分类</a>
+                <a href="./archives.html" class="m-item item m-mobile-hide"><i
+                        class="clone icon"></i>时间轴</a>
+                <a href="./message_board.html" class="m-item item m-mobile-hide"><i
+                        class="envelope outline icon"></i>留言板</a>
+                <a href="#" class="m-item item m-mobile-hide"><i
+                        class="info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="搜索....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+
+    <!--中间内容-->
+    <div class="m-container m-padding-tb-huge m-opacity-mini animate__animated animate__slideInDown">
+        <div class="ui stackable container">
+            <div class="ui top attached teal segment">
+                <!--中间内容-->
+                <div class="ui bottom attached tab active" data-tab="first">
+                    <div>
+                        <div class="ui padded vertical segment m-padded">
+                            <div style="text-align: center; margin-bottom: 50px!important;">
+                                <img class="ui circular image" style="margin: 0 auto; height: 275px;width: 275px;"
+                                     alt="" th:src="@{/images/adminavatar.jpg}" src="../static/images/adminavatar.jpg">
+                                <h1 class="ui center aligned header"
+                                    style="font-family:微软雅黑;margin-bottom: 20px ">Yifelix Blog</h1>
+                                <p style="font-size: 17px;font-weight: 400;letter-spacing: 7px">
+                                    会渴望长大，会期盼未来的样子
+                                    <br><br>
+                                    会热爱生活，会发现雨后的太阳
+                                    <br><br>
+                                    流年笑掷，未来可期
+                                    <br><br>
+                                    一切都会慢慢慢慢如意
+                                    <br><br>
+                                    Hello,Word!
+                                </p>
+
+                            </div>
+                            <div>
+                                <h2 class="ui horizontal divider header  m-text-thin m-text-color">简介</h2>
+                                <p style="font-size: 16px;font-weight: 300;text-align: center">
+                                    Yifelix Blog是一个由个人开发的博客网站，后端使用的是Spring Boot+MyBatis，前端Semantic UI+Thymeleaf。诞生于2020年5月10号。本站采用阿里云提供的服务器ECS。现在只是最初版本，后续还会继续更新.....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!--底部footer-->
+    <footer  th:replace="_fragments :: footer"
+            class="ui inverted vertical segment m-padded-tb-massive m-opacity-mini">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="four wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}"
+                                 class="ui rounded image" style="width: 100px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                    <div class="ui inverted link list">
+                        <p class="item">Email：1016445037@qq.com</p>
+                        <p class="item">QQ:1016445037</p>
+                    </div>
+                </div>
+                <div class="eight wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced ">Yifelix</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">
+                        Hi~欢迎访问我的博客，本博客是自己通过代码构建，如果对这些技术感兴趣的朋友可以联系我，一起学习。
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui inverted section divider"></div>
+            <span class="m-white m-opacity-tiny">Copyright © 2020 Yifelix  Designed by YZJ</span><br>
+            <div class="m-opacity-tiny" style="margin:0 auto; padding:20px 0;">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35010502000146"
+                   style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img th:src="@{/images/备案图标.png}" src="../static/images/备案图标.png" style="float:left;"/><p class="m-red" style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">闽公网安备 35010502000146号</p>
+                </a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35010502000146"
+                   style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p class="m-white" style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">闽ICP备20012697号</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <!--/*/</th:block>/*/-->
+    <script>
+        $('.menu,toggle').click(function () {
+            $(".m-item").toggleClass('m-mobile-hide');
+        });
+
+        $('.qq').popup();
+
+        $('.wechat').popup({
+            popup: $('.wechat-qr'),
+            position: 'bottom center'
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="edu.fdzc.mapper.ITypeMapper">
+    <!--新增分类-->
+    <insert id="saveType" parameterType="edu.fdzc.entity.Type">
+        insert into t_type value (#{id},#{name});
+    </insert>
+
+    <!--根据id，查询分类-->
+    <select id="getType" resultType="edu.fdzc.entity.Type">
+        select id,name from t_type where id = #{id}
+    </select>
+
+    <!--查询所有分类-->
+    <select id="getAllType" resultType="edu.fdzc.entity.Type">
+        select * from t_type
+    </select>
+
+    <!--修改分类-->
+    <update id="updateType" parameterType="edu.fdzc.entity.Type">
+        update t_type set name =#{name} where id=#{id};
+    </update>
+
+    <!--删除分类-->
+    <delete id="deleteType">
+        delete from t_type where id = #{id};
+    </delete>
+
+    <!--根据Name查询分类-->
+    <select id="getTypeByName" resultType="edu.fdzc.entity.Type">
+        select * from t_type where name =#{name}
+    </select>
+
+    <!--分类导航统计-->
+    <select id="getAllTypeAndBlog" resultType="edu.fdzc.queryvo.TypeBar">
+        SELECT t.id typeId,t.name,COUNT(*) typeCount
+        from t_blog b,t_type t where b.type_id = t.id
+        GROUP BY type_id
+        ORDER BY COUNT(*) DESC
+    </select>
+
+    <!--首页分类导航统计-->
+    <select id="getTypeSortById" resultType="edu.fdzc.queryvo.TypeBar">
+        SELECT t.id typeId,t.name,COUNT(*) typeCount from t_blog b,t_type t where b.type_id = t.id GROUP BY type_id
+        ORDER BY COUNT(*) DESC LIMIT #{size}
+    </select>
+
+</mapper>

@@ -1,0 +1,8 @@
+2020-07-01 15:00:59.523  INFO 7808 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 7808 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-01 15:00:59.532  INFO 7808 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-01 15:01:01.969  INFO 7808 --- [restartedMain] edu.fdzc.BlogApplication                 : Started BlogApplication in 3.005 seconds (JVM running for 3.967)
+2020-07-01 15:01:21.841  INFO 7808 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Request: {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='edu.fdzc.controller.IndexController.index', args=[{}, 1, {}]}
+2020-07-01 15:01:23.341  INFO 7808 --- [http-nio-80-exec-1] edu.fdzc.aspect.LogAspect                : Result:{}index
+2020-07-01 15:03:13.237  INFO 3640 --- [main] edu.fdzc.BlogApplicationTests            : Starting BlogApplicationTests on StaticVin with PID 3640 (started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-01 15:03:13.238  INFO 3640 --- [main] edu.fdzc.BlogApplicationTests            : The following profiles are active: pro
+2020-07-01 15:03:17.008  INFO 3640 --- [main] edu.fdzc.BlogApplicationTests            : Started BlogApplicationTests in 4.281 seconds (JVM running for 5.45)

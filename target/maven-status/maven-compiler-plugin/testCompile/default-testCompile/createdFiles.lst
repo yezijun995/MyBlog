@@ -1,0 +1,8 @@
+edu\fdzc\mapper\ICommentMapperTest.class
+edu\fdzc\test\ITypeServiceTest.class
+edu\fdzc\test\IMessageServiceTest.class
+edu\fdzc\test\ITypeMapperTest.class
+edu\fdzc\test\IUserMapperTest.class
+edu\fdzc\BlogApplicationTests.class
+edu\fdzc\test\IBlogMapperTest.class
+edu\fdzc\test\IBlogServiceTest.class

@@ -1,0 +1,9 @@
+2020-07-10 00:35:16.822  INFO 14208 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 14208 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-10 00:35:16.834  INFO 14208 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-10 00:35:21.733  INFO 14208 --- [restartedMain] edu.fdzc.BlogApplication                 : Started BlogApplication in 5.788 seconds (JVM running for 8.35)
+2020-07-10 00:37:15.479  INFO 14084 --- [restartedMain] edu.fdzc.BlogApplication                 : Starting BlogApplication on StaticVin with PID 14084 (D:\MyBlog\BlogAfter\blog\target\classes started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-10 00:37:15.483  INFO 14084 --- [restartedMain] edu.fdzc.BlogApplication                 : The following profiles are active: pro
+2020-07-10 00:37:19.512  INFO 14084 --- [restartedMain] edu.fdzc.BlogApplication                 : Started BlogApplication in 4.869 seconds (JVM running for 7.475)
+2020-07-10 00:39:44.877  INFO 9584 --- [main] edu.fdzc.BlogApplicationTests            : Starting BlogApplicationTests on StaticVin with PID 9584 (started by StaticVin in D:\MyBlog\BlogAfter\blog)
+2020-07-10 00:39:44.879  INFO 9584 --- [main] edu.fdzc.BlogApplicationTests            : The following profiles are active: pro
+2020-07-10 00:39:51.944  INFO 9584 --- [main] edu.fdzc.BlogApplicationTests            : Started BlogApplicationTests in 7.782 seconds (JVM running for 9.603)

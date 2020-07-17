@@ -1,0 +1,16 @@
+
+spring:
+  profiles:
+    active: pro
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+#  mybatis\u4F9D\u8D56
+mybatis:
+  type-aliases-package: edu.fdzc.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+comment.avatar: /images/avatar.jpg
